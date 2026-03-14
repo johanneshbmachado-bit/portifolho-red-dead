@@ -12,6 +12,13 @@ body{
     height: 100%;
 }
 
+header{
+    padding: 20px;
+    background-color: gray;
+    text-align: center;
+
+}
+
 main{
     position: relative;
 
@@ -23,26 +30,50 @@ section#login{
     position: absolute;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: white;
     text-align: center;
-    width: 800px;
-    height: 600px;
+    width: 90vw;
+    height: 95vh;
 }
 
 article{
-    border: 2px dotted black;
+    border: 3px solid lightgray;
+    outline: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin: 10px;
+}
+
+article h1{
+    border-radius: 10px 10px 0px 0px;
+    font-size: 2em;
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+    padding: 5px;
 }
 
 article#Rd1{
-    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+article#Rd1 img{
+    width: 85vw;
+    height: 60vh;
+    border-radius:0px 0px 10px 10px;
+}
+
+article#Rd2 img{
+    width: 85vw;
+    height: 60vh;
+    border-radius:0px 0px 10px 10px;
 }
 
 article#Rd2{
-    grid-column: 2/3;
+    grid-row: 2/3;
 }
