@@ -1,18 +1,23 @@
 @charset "UTF-8";
 
 *{
-    margin: 0px;
-    padding: 0px;
-    border: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 body{
     background-color: lightgray;
-    width: 100%;
-    height: 100%;
 }
 
 header{
+    width: 100%;
     padding: 20px;
     background-color: gray;
     text-align: center;
@@ -22,8 +27,8 @@ header{
 main{
     position: relative;
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
 }
 
 section#login{
@@ -62,6 +67,10 @@ article#Rd1{
     grid-row: 1/2;
 }
 
+article#Rd2{
+    grid-row: 2/3;
+}
+
 article#Rd1 img{
     width: 85vw;
     height: 60vh;
@@ -74,6 +83,28 @@ article#Rd2 img{
     border-radius:0px 0px 10px 10px;
 }
 
-article#Rd2{
-    grid-row: 2/3;
+@media screen  and (min-width:1024px){
+    section#login{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article#Rd1{
+        grid-row:1/1;
+        grid-column: 1/2;
+    }
+
+    article#Rd2{
+        grid-row:1/1;
+        grid-column: 2/3;
+    }
+
+    article#Rd1 img{
+        width: 40vw;
+        height: 60vh;
+    }
+
+    article#Rd2 img{
+        width: 40vw;
+        height: 60vh;
+    }
 }
