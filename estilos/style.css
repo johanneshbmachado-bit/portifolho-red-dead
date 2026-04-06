@@ -86,6 +86,15 @@ article#Rd2 img{
         grid-template-columns: 1fr 1fr;
     }
 
+    article h1{
+        border-radius: 10px;
+    }
+
+    article#Rd1 img , article#Rd2 img{
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
     article#Rd1{
         grid-row:1/1;
         grid-column: 1/2;
