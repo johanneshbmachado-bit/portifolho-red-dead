@@ -12,6 +12,7 @@ html, body{
 
 body{
     background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
@@ -139,5 +140,9 @@ a{
     color: white;
     font-weight: bold;
     font-size: 2rem;
+}
+
+ul{
+    list-style: none;
 }
 
