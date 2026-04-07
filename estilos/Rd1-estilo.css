@@ -37,6 +37,12 @@ article#perfil{
     margin-bottom: 10px;
 }
 
+div.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 p{
     text-align: justify;
     font-size: 1.2rem;
